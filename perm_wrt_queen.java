@@ -22,7 +22,8 @@ public static void perm(boolean board[],int total_queen,int curr_q,String ans) {
 	if(board[i]==false) {
 		board[i]=true;
 		perm(board, total_queen, curr_q+1,ans+"q"+curr_q+"b"+i+",");
-		
+		board[i]=false;
+
 	}
 	
 }}
